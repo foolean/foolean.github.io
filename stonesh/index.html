@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<base href="" />
+
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width" />  
+  
+  
+<title>stonesh | Foolean [foo-lee-uhn]</title>
+
+
+<link rel='stylesheet' id='happenstance-style-gray-css'  href='/wp-content/themes/happenstance/css/colors/gray.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='happenstance-style-css'  href='/wp-content/themes/happenstance/style.css?ver=4.1.1' type='text/css' media='all' />
+<style id='happenstance-style-inline-css' type='text/css'>
+#wrapper #header .header-content .site-title, #wrapper #header .header-content .site-description, #wrapper #header .header-content .header-logo { max-width: 100%; }
+#wrapper #main-content .post-entry .attachment-post-thumbnail { margin-bottom: 17px; } #wrapper #main-content .post-entry .post-entry-content { margin-bottom: -4px; }
+</style>
+<link rel='stylesheet' id='happenstance-elegantfont-css'  href='/wp-content/themes/happenstance/css/elegantfont.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='happenstance-google-font-default-css'  href='//fonts.googleapis.com/css?family=Oswald&#038;subset=latin%2Clatin-ext&#038;ver=4.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='/wp-content/themes/happenstance/js/html5.js?ver=3.6'></script>
+
+ 
+
+<link rel='canonical' href='/stonesh/' />
+<link rel='shortlink' href='/?p=15' />
+<!--[if IE]>
+<style type="text/css" media="screen">
+#container-shadow {
+        behavior: url("/wp-content/themes/happenstance/css/pie/PIE.php");
+        zoom: 1;
+}
+</style>
+<![endif]-->
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #000000; }
+</style>
+  
+</head> 
+<body class="page page-id-15 page-template-default custom-background" id="wrapper">
+<div class="pattern"></div> 
+   
+<div id="container">
+<div id="container-shadow">
+  <header id="header">
+    
+    <div class="header-content-wrapper">
+    <div class="header-content">
+      <p class="site-title"><a href="/">Foolean [foo-lee-uhn]</a></p>
+      <p class="site-description">Pertaining to or being a logical system example for absolutely everything.</p>
+    </div>
+    </div>
+    <div class="menu-box-wrapper">
+    <div class="menu-box">
+      <a class="link-home" href="/"><i class="icon_house" aria-hidden="true"></i></a>
+<div class="menu-menu-1-container"><ul id="nav" class="menu"><li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15 current_page_item menu-item-38"><a href="/stonesh/">stonesh</a></li>
+</ul></div>    </div>
+    </div>
+    
+  <div class="header-image">
+    <img class="header-img" src="/wp-content/uploads/2015/03/multicolors-fractal-abstract-art-web-header-1.jpg" alt="Foolean [foo-lee-uhn]" />
+  </div>
+  </header> <!-- end of header -->
+  <div id="wrapper-content">
+  <div id="main-content">
+  <div id="content">    <div class="content-headline">
+      <h1 class="entry-headline"><span class="entry-headline-text">stonesh</span></h1>
+    </div>
+    <div class="entry-content">
+<p style="text-align: justify;"><strong>Stonesh</strong>, A.K.A. &#8220;The Stone Shell&#8221; is a shell, designed to be run on a bastion host, that facilitates controlled access to internal systems without providing command-line access on the bastion host itself.  Stonesh validates that users are authorized to reach specific hosts via either local file or LDAP lookups.  Additionally, stonesh can also restrict access to specific hosts from clients from specific countries via GeoIP lookups.  While the GeoIP functionality could be considered a &#8220;<em>blunt object</em>&#8220;, it should suffice for situations where access must be limited to specific countries.  In other words the attacker must willfully circumvent the control by using a system in an approved country.</p>
+<h3 style="text-align: justify;"><strong>DOWNLOAD</strong></h3>
+<p style="text-align: justify;">Source       <a title="stonesh-3.2.1.tar.gz" href="/download/stonesh/stonesh-3.2.1.tar.gz">stonesh-3.2.1.tar.gz</a><br />
+GitHub       <a title="https://github.com/foolean/stonesh" href="https://github.com/foolean/stonesh" target="_blank">https://github.com/foolean/stonesh</a></p>
+<h3><strong>CONFIGURATION</strong></h3>
+<p><strong><span style="text-decoration: underline;">stonesh.conf</span><br />
+</strong>All configurations are kept in stonesh.conf. <em><em>See man stonesh.conf for the list of options.</em></em></p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>hosts.lst</strong></span><br />
+Access to internal hosts is permitted via the hosts.lst file. Requests for hosts that are not listed in the hosts.lst file are immediately denied. The format of the hosts.lst file is &#8216;host[:port]&#8217;. The port is optional and provides for connectivity to ssh servers running on ports other than the standard tcp/22.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>users.lst</strong></span> (<em>if using local authorization</em>)<br />
+Users are authorized via the users.lst file. Requests from users that are not listed in the users.lst file are immediately denied. The users.lst file is also used to authorize the user&#8217;s access to specific hosts. Additionally, the users.lst file controls whether the user is permitted to use stonesh&#8217;s proxy mode feature to the specific host.</p>
+<p>The format of the users.lst file is:</p>
+<pre style="padding-left: 30px;">user:[host1[+],host2[+],...]</pre>
+<p>The trailing &#8216;+&#8217; indicates that the user is permitted to use stonesh&#8217;s proxy mode to that host.</p>
+<h3><strong>LDAP AUTHORIZATION</strong></h3>
+<p style="text-align: justify;">When enabled, stonesh will authorize client connections against a LDAP server by looking for appropriate host and authorizedService attributes. The user must have a host attribute containing the hostname portion of the host being requested. For example; requesting the host &#8216;foo.bar.com&#8217; will require a host attribute with the value &#8216;foo&#8217;. Connections will be dropped immediately if the host attribute doesn&#8217;t exist. For proxied access, the proper authorizedService attribute must exist. The format of the authorizedService value is [tag]-[hostname]. For example; if the tag is &#8216;proxy&#8217; and the requesting proxied access to host &#8216;foo.bar.com&#8217; will require a authorizedService attribute with the value &#8216;proxy-foo&#8217;.</p>
+<h3><strong>GeoIP</strong></h3>
+<p style="text-align: justify;">Stonesh utilizes GeoIP to validate a client&#8217;s country of origin. The use of GeoIP is not a perfect sciece but should provide an adequate level of &#8220;positive access control&#8221; in ensuring that clients are coming from expected countries. It does not prevent an attacker from using a client in a permitted country to access the bastion. In order for GeoIP to be as accurate as it can be, it is important that the GeoIP database files be kept up to date. You can either obtain an account with MaxMind or utilize their free databases. Note: that the free databases will lag behind reality so your accuracy needs should drive your decision making.</p>
+<p style="padding-left: 30px;">wget <a href="http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz">http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz</a><br />
+wget <a href="http://geolite.maxmind.com/download/geoip/database/GeoIPv6.dat.gz">http://geolite.maxmind.com/download/geoip/database/GeoIPv6.dat.gz</a></p>
+<p>NOTE: The GeoIP based regression tests use a static database file to ensure that results are not tainted by changes in the GeoIP data.</p>
+<h3><strong>CHROOTING</strong></h3>
+<p style="text-align: justify;">Whenever possible, it is adventageous to chroot users into an environment that only contains the applications and libraries necessary to perform thier work. stonesh was rewritten from perl to C in order to facilitate chrooting without having to include perl into the chrooted environment. Using the ChrootDirectory functionality of sshd(8) is the preferred method for locking users into a secure environment. The chrooted environment can be created, and removed, on the fly using pam_script and the scripts provided in the contrib directory of the source.</p>
+    
+
+<div id="comments" class="comments-area">
+
+	
+			
+</div><!-- #comments .comments-area -->    </div>   
+  </div> <!-- end of content -->
+<aside id="sidebar">
+</aside> <!-- end of sidebar -->  </div> <!-- end of main-content -->
+  </div> <!-- end of wrapper-content -->
+<footer id="wrapper-footer">
+<div class="footer-signature"><div class="footer-signature-content">			<div class="textwidget">Copyright &copy; foolean.org</div>
+		</div></div></footer>  <!-- end of wrapper-footer -->
+</div> <!-- end of container-shadow -->
+</div> <!-- end of container -->
+<script type='text/javascript' src='/wp-content/themes/happenstance/js/placeholders.js?ver=2.0.8'></script>
+<script type='text/javascript' src='/wp-content/themes/happenstance/js/scroll-to-top.js?ver=1.0'></script>
+<script type='text/javascript' src='/wp-content/themes/happenstance/js/menubox.js?ver=1.0'></script>
+<script type='text/javascript' src='/wp-content/themes/happenstance/js/selectnav.js?ver=0.1'></script>
+<script type='text/javascript' src='/wp-content/themes/happenstance/js/responsive.js?ver=1.0'></script>
+    
+</body>
+</html>
