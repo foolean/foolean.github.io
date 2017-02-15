@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<base href="" />
+
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width" />  
+  
+  
+<title>MyTOTP | Foolean [foo-lee-uhn]</title>
+
+
+<link rel='stylesheet' id='happenstance-style-gray-css'  href='/wp-content/themes/happenstance/css/colors/gray.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='happenstance-style-css'  href='/wp-content/themes/happenstance/style.css?ver=4.1.1' type='text/css' media='all' />
+<style id='happenstance-style-inline-css' type='text/css'>
+#wrapper #header .header-content .site-title, #wrapper #header .header-content .site-description, #wrapper #header .header-content .header-logo { max-width: 100%; }
+#wrapper #main-content .post-entry .attachment-post-thumbnail { margin-bottom: 17px; } #wrapper #main-content .post-entry .post-entry-content { margin-bottom: -4px; }
+</style>
+<link rel='stylesheet' id='happenstance-elegantfont-css'  href='/wp-content/themes/happenstance/css/elegantfont.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='happenstance-google-font-default-css'  href='//fonts.googleapis.com/css?family=Oswald&#038;subset=latin%2Clatin-ext&#038;ver=4.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='/wp-content/themes/happenstance/js/html5.js?ver=3.6'></script>
+
+ 
+
+<link rel='canonical' href='/mytotp/' />
+<link rel='shortlink' href='/?p=15' />
+<!--[if IE]>
+<style type="text/css" media="screen">
+#container-shadow {
+        behavior: url("/wp-content/themes/happenstance/css/pie/PIE.php");
+        zoom: 1;
+}
+</style>
+<![endif]-->
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #000000; }
+</style>
+  
+</head> 
+<body class="page page-id-15 page-template-default custom-background" id="wrapper">
+<div class="pattern"></div> 
+   
+<div id="container">
+<div id="container-shadow">
+  <header id="header">
+    
+    <div class="header-content-wrapper">
+    <div class="header-content">
+      <p class="site-title"><a href="/">Foolean [foo-lee-uhn]</a></p>
+      <p class="site-description">Pertaining to or being a logical system example for absolutely everything.</p>
+    </div>
+    </div>
+    <div class="menu-box-wrapper">
+    <div class="menu-box">
+      <a class="link-home" href="/"><i class="icon_house" aria-hidden="true"></i></a>
+<div class="menu-menu-1-container"><ul id="nav" class="menu">
+<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-15 menu-item-38"><a href="/stonesh/">stonesh</a></li>
+<li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15 current_page_item menu-item-39"><a href="/mytotp/">mytotp</a></li>
+</ul></div>    </div>
+    </div>
+    
+  <div class="header-image">
+    <img class="header-img" src="/wp-content/uploads/2015/03/multicolors-fractal-abstract-art-web-header-1.jpg" alt="Foolean [foo-lee-uhn]" />
+  </div>
+  </header> <!-- end of header -->
+  <div id="wrapper-content">
+  <div id="main-content">
+  <div id="content">    <div class="content-headline">
+      <h1 class="entry-headline"><span class="entry-headline-text">MyTOTP</span></h1>
+    </div>
+    <div class="entry-content">
+<p style="text-align: justify;"><strong>MyTOTP</strong>, pronounced "My TOTP or (Mighty OTP)", provides centralized
+two-factor authentication (2FA) via integration into FreeRADIUS.  MyTOTP
+can work with any soft-token that generates unique TOKENCODES via the TOTP
+(RFC-6238) algorithm.  Google-Authenticator is probably the most recognisable
+and common client though there are others.
+
+<h3 style="text-align: justify;"><strong>DOWNLOAD</strong></h3>
+GitHub       <a title="https://github.com/foolean/mytotp" href="https://github.com/foolean/mytotp" target="_blank">https://github.com/foolean/mytotp</a></p>
+<h3><strong>TWO-FACTOR AUTHENTICATION</strong></h3>
+<p style="text-align: justify;">Authentication factors are generally thought of as "something you know",
+"something you have", and "something you are".  Multi-factor authentication is
+when two or more factors are in use.  Typically, two-factor authentication is
+comprised of something you know (e.g. your password) and something you
+have (e.g. your token).  It is debated in some circles whether or not using
+PIN+TOKENCODE is actually two-factor in itself.  Technically it is as the PIN
+is something you know and the TOKENCODE is something you have.  However, the
+PIN can also be thought of as protecting the TOKENCODE.  Thus it is not
+uncommon to use the entire PASSCODE as the "something you have" and the
+Password as the "something you know".  Ultimately the choice is up to the
+system's administrator how much or how little to enforce.
+</p>
+<h3><strong>FEATURES</strong></h3>
+<p style="text-align: justify;">
+<ul>
+<li>Integrates with FreeRADIUS via rlm_perl</li>
+<li>Uses Google-Authenticator, or anyother TOTP(RFC-6238) app, as the soft-token</li>
+<li>Uses PIN+TOKENCODE for authentication</li>
+<li>Failure based account lockout</li>
+<li>Set account expiration</li>
+<li>Administratively lock/unlock accounts</li>
+<li>Encrypts the account's PIN for storage in the account database</li>
+<li>Encrypts the account's shared secret with the account's PIN</li>
+<li>Supports LDAP and DB based backends (sqlite is used for local-only storage)</li>
+<li>Distinct SYSLOG messages for ease of monitoring and tracking</li>
+<li>CGI script to generate QR codes</li>
+</ul>
+</p>
+<h3><strong>FreeRADIUS</strong></h3>
+<p style="text-align: justify;">There are multiple options when configuring FreeRADIUS, which depend primarily
+on your needs and your environment.  Below are basic configuration snippets that
+should help get you to a working Two-Factor authentication server.</p>
+
+<p style="text-align: justify;">Ref: <a href="http://wiki.freeradius.org/modules/Rlm_perl#config">http://wiki.freeradius.org/modules/Rlm_perl#config</a></p>
+
+<pre>
+# /etc/freeradius/modules/perl
+    perl {
+        module = /usr/sbin/mytotp_freeradius.pl
+    }
+
+
+# /etc/freeradius/users
+    DEFAULT  Auth-Type = Perl
+
+
+# /etc/freeradius/sites-enabled/default
+    authenticate {
+        Auth-Type Perl {
+            perl
+        }
+    }
+</pre>
+
+<h3><strong>PAM RADIUS AUTH</strong></h3>
+<p style="text-align: justify;">The most common way have Linux systems authenticate against MyTOTP is with PAM
+Radius Auth.  If you will be using MyTOTP along with another authentication
+method (e.g. LDAP or UNIX passwd) you will want to make sure that you have a
+version >= 1.3.17 as it allows the prompt to be changed.  In prior versions,
+the prompt is hard-coded to "Password: " which tends to lead to confusion when
+users aren't sure if they are to enter their PASSCODE or their Password.</p>
+
+<p style="text-align: justify;">To use MyTOTP via pam_radius_auth, place the following line in the relevant
+files in /etc/pam.d.  The line will generally go before any other
+authentication methods.</p>
+
+<p style="text-align: justify;">  # Require two-factor authentication
+  auth requisite pam_radius_auth.so prompt=PASSCODE</p>
+
+<p style="text-align: justify;">ref: <a href="http://freeradius.org/pam_radius_auth/">http://freeradius.org/pam_radius_auth/</a></p>
+
+<h3><strong>LOG MESSAGES</strong></h3>
+<p style="text-align: justify;">MyTOTP will generate several types of log messages.  Messages related to the
+authentication process begin with AUTH_ to facilitate ease of monitoring and
+tracking.</p>
+
+<pre>
+AUTH_ACCOUNT_LOCKED:        The account is administratively locked
+AUTH_EXPIRED_TOKEN:         The account's token has expired
+AUTH_INVALID_PIN:           The user entered an invalid PIN
+AUTH_INVALID_SECRET:        The system was unable to decrypt the shared secret
+AUTH_INVALID_TOKENCODE:     The user entered an invalid TOKENCODE
+AUTH_TOKENCODE_REUSE:       The user entered attempted to reuse a TOKENCODE
+AUTH_USERNAME_NOT_FOUND:    The requested user could not be found
+AUTH_VALID_TOKENCODE:       The user successfully authenticated
+error:                      Processing error messages
+fatal:                      Non-recoverable processing error messages
+debug:                      Debugging messages
+</pre>
+    
+
+<div id="comments" class="comments-area">
+
+	
+			
+</div><!-- #comments .comments-area -->    </div>   
+  </div> <!-- end of content -->
+<aside id="sidebar">
+</aside> <!-- end of sidebar -->  </div> <!-- end of main-content -->
+  </div> <!-- end of wrapper-content -->
+<footer id="wrapper-footer">
+<div class="footer-signature"><div class="footer-signature-content">			<div class="textwidget">Copyright &copy; foolean.org</div>
+		</div></div></footer>  <!-- end of wrapper-footer -->
+</div> <!-- end of container-shadow -->
+</div> <!-- end of container -->
+<script type='text/javascript' src='/wp-content/themes/happenstance/js/placeholders.js?ver=2.0.8'></script>
+<script type='text/javascript' src='/wp-content/themes/happenstance/js/scroll-to-top.js?ver=1.0'></script>
+<script type='text/javascript' src='/wp-content/themes/happenstance/js/menubox.js?ver=1.0'></script>
+<script type='text/javascript' src='/wp-content/themes/happenstance/js/selectnav.js?ver=0.1'></script>
+<script type='text/javascript' src='/wp-content/themes/happenstance/js/responsive.js?ver=1.0'></script>
+    
+</body>
+</html>
